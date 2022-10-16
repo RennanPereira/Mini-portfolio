@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/rolagem.css">
+    <title>Mini portfólio</title>
+  </head>
+  <body>
+    <main class="card">
+      <div class="personalInfo">
+        <img src="https://github.com/RennanPereira.png" alt="foto de perfil" />
+        <h1 class="name">Rennan Pereira</h1>
+        <h2 class="ocupation">Estudante de Desenvolvimento Frontend</h2>
+      </div>
+      <div class="content">
+        <ul class="tabs">
+          <li class="tab selected" id="about">
+            <img src="./src/img/sobre.gif" alt="icone de sobre mim" />
+          </li>
+          <li class="tab" id="socials">
+            <img src="./src/img/coracao.gif" alt="ícone de redes sociais" />
+          </li>
+        </ul>
+        <div class="tabsInfo">
+          <div class="info selected" id="info-about">
+            <h3 class="subtitle">Sobre</h3>
+          <div
+          class="description">
+              <p>olá! meu nome é <span>Rennan Pereira</span>, seja bem-vindo(a)!</p>
+              <p>
+                Sou um apaixonado por tecnologia que decidiu seguir o rumo do
+                desenvolvimento web em 2022. Meu primeiro contato com
+                programação foi em 2016. Apesar de ter gostado da área, só
+                comecei a dar o devido foco em 2022, quando um amigo me
+                apresentou as maravilhas do
+                <span>Front-end e do Back-end</span>.
+              </p>
+            </div>
+          </div>
+
+          <div class="info" id="info-socials">
+            <h3 class="subtitle">Minhas redes</h3>
+            <ul class="socials">
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/rennan-santos-pereira/"
+                  target="_blank"
+                  class="linkedin"
+                  >LinkedIn</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/RennanPereira"
+                  target="_blank"
+                  class="github"
+                  >gitHub</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./src/js/index.js"></script>
+  </body>
+</html>

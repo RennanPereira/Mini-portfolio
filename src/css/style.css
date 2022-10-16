@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+body {
+  background-image: url(../img/fundo-site.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  font-family: 'VT323', monospace;
+  color: #f3f3f3;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+}
+
+.card {
+  background-color: #070d12;
+  width: 370px;
+  border: 2px solid #e126d9;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card .personalInfo{
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.card .personalInfo img{
+  width: 96px;
+  border-radius: 50px;
+  border: 4px solid #02d08f;
+}
+
+.card .personalInfo .name{
+  font-size: 26px;
+}
+
+.card .personalInfo .ocupation{
+  font-size: 20px;
+  color: #b8bbc5;
+}
+
+.card .content {
+  margin-top: 15px;
+}
+
+.card .tabs{
+  display: flex;
+}
+
+.card .tabs .tab{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.card .tabs img{
+  width: 30px;
+}
+
+.card .tabs .tab.selected{
+  background-color: #262626;
+}
+
+.card .tabsInfo{
+  background-color: #262626;
+}
+
+.card .tabs .tab:hover{
+  background-color: #414141;
+}
+
+.tabsInfo .info{
+  min-height: 260px;
+  padding: 16px;
+  display: none;
+}
+
+.tabsInfo .info.selected{
+  display: block;
+}
+
+.tabsInfo .subtitle{
+  font-size: 22px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.tabsInfo .description{
+  font-size: 20px;
+  max-height: 180px;
+  overflow-y: auto;
+  padding-right: 15px;
+}
+
+.tabsInfo .description span{
+  color: #02d08f;
+}
+
+.socials{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  max-height: 180px;
+  overflow-y: auto;
+}
+
+.socials li a{
+  color: #f3f3f3;
+  width: 250px;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.socials .linkedin{
+  background-color: #1d87bd;
+}
+
+.socials .github{
+  background-color:#545454;
+}
+
+.socials li a:hover{
+  opacity: 0.8;
+}
+
